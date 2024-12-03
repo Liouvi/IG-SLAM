@@ -1,0 +1,8 @@
+inherit_from: configs/Replica/replica_mono_sp.yaml
+mode: mono
+
+data:
+  input_folder: datasets/Replica/office4
+  output: datasets/Replica/office4/mono
+  start_idx: 0
+  post_processing: False

@@ -1,0 +1,10 @@
+inherit_from: configs/EuRoC/euroc_mono.yaml
+
+mode: mono
+
+data:
+  input_folder: datasets/euroc/V1_03_difficult
+  output: datasets/euroc/V1_03_difficult/mono
+  start_idx: 200
+  post_processing: True
+

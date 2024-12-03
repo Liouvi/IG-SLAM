@@ -1,0 +1,8 @@
+inherit_from: configs/Replica/replica_mono_sp.yaml
+mode: mono
+
+data:
+  input_folder: datasets/Replica/room0
+  output: datasets/Replica/room0/mono
+  start_idx: 0
+  post_processing: True

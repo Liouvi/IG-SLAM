@@ -1,0 +1,9 @@
+inherit_from: configs/EuRoC/euroc_mono.yaml
+
+mode: mono
+
+data:
+  input_folder: datasets/euroc/MH_02_easy
+  output: datasets/euroc/MH_02_easy/mono
+  start_idx: 400
+  post_processing: True

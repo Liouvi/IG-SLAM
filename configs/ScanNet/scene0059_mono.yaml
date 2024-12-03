@@ -1,0 +1,8 @@
+inherit_from: ./configs/ScanNet/scannet_mono.yaml
+mode: mono
+
+data:
+  input_folder: datasets/ScanNet/scans/scene0059_00
+  output: datasets/ScanNet/scans/scene0059_00/mono
+  start_idx: 0
+  post_processing: True

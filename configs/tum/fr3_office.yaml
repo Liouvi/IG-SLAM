@@ -1,0 +1,8 @@
+inherit_from: configs/tum/tum.yaml
+mode: mono
+
+data:
+  input_folder: datasets/tum/rgbd_dataset_freiburg3_long_office_household
+  output: datasets/tum/rgbd_dataset_freiburg3_long_office_household/mono
+  start_idx: 0
+  post_processing: True
