@@ -84,7 +84,7 @@ class SLAM_GUI:
         self.window_w, self.window_h = 1600, 900
 
         self.window = gui.Application.instance.create_window(
-            "DGS-SLAM", self.window_w, self.window_h
+            "IG-SLAM", self.window_w, self.window_h
         )
         self.window.set_on_layout(self._on_layout)
         self.window.set_on_close(self._on_close)

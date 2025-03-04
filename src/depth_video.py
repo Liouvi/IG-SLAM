@@ -302,7 +302,9 @@ class DepthVideo:
                     L_inv = torch.linalg.solve_triangular(L, identity, upper=False)
                     if torch.isnan(L_inv).any():
                         print("NANs in L_inv!!")
-                        raise
+                        kx, kk = torch.unique(ii, return_inverse=True)
+                        self.depths_cov[kx] = torch.ones_like(self.depths_cov[kx])
+                        return
                     # We only care about block diagonals of sigma_g though, here we are calculating everything...
                     sigma_gg = L_inv.transpose(-2,-1) @ L_inv 
                     # TODO: this is the same as optimizeDensely in gtsam....
